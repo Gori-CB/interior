@@ -1,0 +1,133 @@
+//"out":"style.css"
+@text:#000;
+@grey:#717073;
+@white:#fff;
+.myborder(@color:#141414,@size:1px){
+    border: @color solid @size;
+}
+@myRadius:5px;
+.tahoma() {
+    font-family: "Arial";
+    font-size: 16px;}
+.tahoma-h() {
+    font-family: "Arial";
+    font-size: 48px;}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(http://www.1280x800.net/large/201203/5225.jpg);
+
+}
+img{
+    width: 270px;
+    height: 150px;
+}
+h1,a{
+    text-decoration: none;
+
+}
+.container
+{
+    height:60px;
+    margin-top: 30px;
+    .cover {
+        display: block;
+        margin-left: auto;
+        margin-right: 190px;
+        max-width: 900px;
+        overflow: auto;
+    .logo{
+        .tahoma-h;
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 5px;
+        color:@white;}
+
+
+    .top_menu{
+        float: right;
+        background-color: @text;
+        height: 60px;
+        margin-left: 150px;
+        border-radius: 5px;
+            li{display: inline-block;
+                margin-top: -16px;
+                margin-right: 20px;;
+                a{
+                    color: #fefbfb;
+                    padding: 19px 20px;
+                    display: block;
+                    font-size: 18px;
+                    transition: all 0.2s ease-out;}
+                a.active {
+                   background:#e8fa1b;
+                   color:black;
+               }
+
+            }
+        }
+    }
+}
+
+.main_block{
+    .myborder;
+    border-radius: @myRadius;
+    position: absolute;
+    background-color:rgba(74, 74, 75, 0.8);
+    width: 900px;
+    margin-top: 40px;
+    padding: 5px 50px;
+    display: block;
+    left:12%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,3.9);
+
+    .wrapper{
+        width: 900px;
+        position: relative;
+        left: 13px;
+
+        h3{
+        color:@white;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        }
+
+        .first, .second, .third{
+            position: relative;
+            width: 270px;
+            float: left;
+            margin:0px 30px 10px 0px;
+
+        }
+
+        .title1,.title2,.title3,{
+            text-transform: uppercase;
+            font-size: 18px;
+            color:@white;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 15px;
+            color:#64656;
+        }
+    }
+}
+
+.links{
+    display: inline-block;
+    position: relative;
+    font-size: 13px;
+    margin-top: 520px;
+    .link1,.link2{
+        margin-left: 240px;
+        margin-right: 290px;
+        color: @white;
+    }
+    :hover{
+    text-decoration: underline;
+}
+}
